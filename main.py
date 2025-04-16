@@ -4,7 +4,7 @@ from pydantic import BaseModel
 import google.generativeai as genai
 
 # Configure Gemini API
-genai.configure(api_key="AIzaSyBFPrrH-qrwMchu-1Cw_Ezz1z4DywKUymc")
+genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('gemini-1.5-pro-latest')
 
 app = FastAPI()
